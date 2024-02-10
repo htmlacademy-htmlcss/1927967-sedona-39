@@ -2,7 +2,7 @@
 
 * Студент: [Дмитрий Запаренко](https://up.htmlacademy.ru/htmlcss/39/user/1927967).
   * Наставник: [Карина Королёва](https://htmlacademy.ru/profile/id1526731).
-  * Сайт: [Мой сайт](https://alanwake21.github.io/1927967-sedona-39/)
+  * Сайт: [Мой проект Седона](https://alanwake21.github.io/1927967-sedona-39/)
 
 ---
 
