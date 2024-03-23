@@ -1402,6 +1402,20 @@ li .advantages-item-text::after {
   background-repeat: no-repeat;
 }
 
+.stars-3 {
+  width: 140px;
+  height: 37px;
+  background-image: url("../img/Catalog/stars-3.svg");
+  background-repeat: no-repeat;
+}
+
+.stars-2 {
+  width: 140px;
+  height: 37px;
+  background-image: url("../img/Catalog/stars-2.svg");
+  background-repeat: no-repeat;
+}
+
 .hotels-item {
   display: grid;
   grid-template-columns: 140px 140px;
@@ -1645,6 +1659,26 @@ margin-bottom: 64px;
  display: flex;
  margin-top: 3px;
  margin-bottom: 0;
+ color: red;
+ font-family: "PT Sans", sans-serif;
+ font-size: 16px;
+ line-height: 21px;
+ position: absolute;
+ right: 204px;
+ top: 212px;
+}
+
+.clarification-2 {
+  display: flex;
+  margin-top: 3px;
+  margin-bottom: 0;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  position: absolute;
+  right: 154px;
+  top: 308px;
 }
 .modal-amount-wrapper {
   display: flex;
