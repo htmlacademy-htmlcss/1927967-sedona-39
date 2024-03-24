@@ -158,7 +158,19 @@ body {
   display: flex;
   align-items: center;
   padding: 22px 12px;
-  background: url("../img/Icons/search.png") center no-repeat;
+  background: url("../img/Icons/Search.svg") center no-repeat;
+  background-size: 20px 19px;
+  width: 44px;
+  min-height: 64px;
+  position: relative;
+}
+
+.favorites {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 22px 12px;
+  background: url("../img/Icons/favorites.svg") center no-repeat;
   background-size: 20px 19px;
   width: 44px;
   min-height: 64px;
@@ -428,6 +440,15 @@ li.service-item:nth-child(1), li.service-item:nth-child(3) {
   margin-bottom: 8px;
 }
 
+.subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .breadcrumbs-list {
   margin: 0;
   padding: 0;
@@ -481,7 +502,7 @@ cursor: pointer;
   display: inline-block;
   width: 7px;
   height: 10px;
-  margin: 0 10px;
+  margin: 0 2px;
   background-image: url("../img/icons/icon-arrow-right.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -562,13 +583,12 @@ margin: 0;
 }
 
 .filter-price-slider span {
-  position: absolute;
-  top: 50%;
-  right: 50px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-color: #aaaaaa;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    line-height: 24px;
+  color: #aaaaaa;
 }
 
 .filter-price-slider label {
@@ -898,6 +918,7 @@ max-width: 151px;
   background-color: #F2F2F2;
   border-radius: 4px;
   font-style: normal;
+  padding: 9px 18px 8px 18px;
 }
 
 .rating-total b {
@@ -1180,6 +1201,15 @@ li .advantages-item-text::after {
 .subscribe p {
   max-width: 475px;
   margin-bottom: 54px;
+  font-size: 22px;
+}
+
+.subtitle-text {
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
 }
 
 .page-footer {
@@ -1204,59 +1234,56 @@ li .advantages-item-text::after {
 .social-icon-item {
   position: relative;
   width: 48px;
-  height: 41px;
 }
 
 .social-icon-item:nth-child(3) {
   margin-right: 0;
-
 }
 
 .social-icon-link {
   display: block;
   width: 47px;
   height: 40px;
-  padding: 10px
-
+  padding: 10px;
 }
 
-.footer-vk-icon {
+.button-VK {
   width: 24px;
   height: 14px;
 }
 
-.footer-tg-icon {
+.button-TG {
   width: 18px;
   height: 15px;
 }
 
-.footer-yt-icon {
+.button-YT {
   width: 22px;
   height: 17px;
 }
 
-.footer-vk-icon,
-.footer-tg-icon,
-.footer-yt-icon {
+.button-VK,
+.button-TG,
+.button-YT {
   display: block;
   fill: #82B3D3;
 }
 
-.footer-vk-icon:hover,
-.footer-tg-icon:hover,
-.footer-yt-icon:hover {
+.button-VK:hover,
+.button-TG:hover,
+.button-YT:hover {
   fill: #68A2CA;
 }
 
-.footer-vk-icon:focus,
-.footer-tg-icon:focus,
-.footer-yt-icon:focus {
+.button-VK:focus,
+.button-TG:focus,
+.button-YT:focus {
   fill: #68A2CA;
 }
 
-.footer-vk-icon:active,
-.footer-tg-icon:active,
-.footer-yt-icon:active {
+.button-VK:active,
+.button-TG:active,
+.button-YT:active {
   fill: #68A2CA;
   opacity: 30%;
 }
@@ -1389,6 +1416,11 @@ li .advantages-item-text::after {
   margin-bottom: 40px;
 }
 
+.rating-stars {
+  list-style: none;
+  padding: 0;
+}
+
 .stars-rating {
   grid-area: stars;
   justify-self: start;
@@ -1444,8 +1476,8 @@ li .advantages-item-text::after {
 
 .favorites b {
   position: absolute;
-  top: 17%;
-  right: 9%;
+  top: 12px;
+  right: 2px;
   content: "12";
   width: 20px;
   min-height: 20px;
