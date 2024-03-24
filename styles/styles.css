@@ -1545,25 +1545,26 @@ li .advantages-item-text::after {
 
 .modal-close-button {
   position: absolute;
-  right: 34px;
+  right: 51px;
   top: 64px;
   width: 52px;
-  height: 52px;
+  min-height: 54px;
   border: none;
   border-radius: 50%;
   background-color: #F2F2F2;
   background-image: url("../img/Modal/Close.png");
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .modal-close-button:hover {
   background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
 }
 
 .modal-close-button:focus {
   background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
 }
 
 .modal-close-button:active {
@@ -1639,18 +1640,37 @@ margin-bottom: 64px;
 }
 
 .modal-registration-input {
-  position: relative;
   width: 440px;
   display: flex;
   margin-left: auto;
   border: none;
-  padding: 12px 20px;
   border-radius: 4px;
   background-color: #F2F2F2;
-  background-image: url("../img/Modal/calendar.svg");
   background-size: 12px 20px cover;
   background-repeat: no-repeat;
   background-position: 95% 50%;
+  position: relative;
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  background: #f2f2f2;
+  padding: 12px 20px 11px 20px;
+  min-height: 48px;
+  transition: all 0.3s;
+}
+
+.modal-icon {
+  position: absolute;
+  content: "";
+  background-image: url("../img/Modal/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 3px;
+  height: 18px;
+  width: 178px;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item-image {
@@ -1667,7 +1687,7 @@ margin-bottom: 64px;
   outline: 3px solid #83B3D3;
 }
 
-.modal-label, .modal-registration-input {
+.modal-label {
   position: relative;
   font-family: inherit;
   display: flex;
@@ -1712,6 +1732,7 @@ margin-bottom: 64px;
   right: 154px;
   top: 308px;
 }
+
 .modal-amount-wrapper {
   display: flex;
 }
@@ -1730,12 +1751,31 @@ margin-bottom: 64px;
 }
 
 .button-minus::after {
-  content: '';
-  width: 14px;
-  height: 2px;
-  background-color: rgba(117, 97, 87, 0.30);
-  background-repeat: no-repeat;
-  position: absolute;
+  width: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  background-color: #F2F2F2;
+}
+
+.button-minus:focus {
+  outline: #000000;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:active {
+  background-image: url("../img/Modal/close_active.svg");
 }
 
 .button-plus::after {
@@ -1762,14 +1802,17 @@ margin-bottom: 64px;
 }
 
 .modal-amount-input {
-width: 31px;
-display: flex;
-justify-content: center;
-align-items: center;
-border: none;
-border-radius: 0;
-margin: 0;
-background-color: #F2F2F2;
+  text-align: center;
+  font-size: 18px;
+  width: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  background-color: #F2F2F2;
+  font-weight: 700;
 }
 
 .amount-registration-item label {
@@ -1798,7 +1841,7 @@ background-color: #F2F2F2;
 }
 
 .tooltip-icon::after {
-  content: url(../img/icons/icon-info.svg);
+  content: url("../img/Modal/Info.svg");
   width: 2px;
   height: 12px;
   display:block;
@@ -1809,7 +1852,6 @@ background-color: #F2F2F2;
 }
 
 .tooltip-text {
-  display: block;
   position: absolute;
   font-family: inherit;
   font-size: 16px;
@@ -1825,7 +1867,20 @@ background-color: #F2F2F2;
   box-sizing: border-box;
   display: none;
   margin-top: 10px;
-  left: -113px;
+  left: -92px;
+}
+
+.tooltip-text::before {
+  content: "";
+  background-image: url("../img/Modal/triangle.svg");
+  width: 19px;
+  min-height: 9px;
+  position: absolute;
+  bottom: 100%;
+  right: 46%;
+  top: -6%;
+  margin-left: auto;
+  margin-right: 13px;
 }
 
 .tooltip {
