@@ -405,7 +405,7 @@ li.service-item:nth-child(1), li.service-item:nth-child(3) {
 
 .filter-price {
   background-color: #000000 ;
-  background-image: url("../img/Filter.jpg");
+  background-image: url("../img/filter.jpg");
   background-repeat: no-repeat;
   min-height: 412px;
   padding: 35px 70px;
@@ -1233,7 +1233,7 @@ li .advantages-item-text::after {
 .button-VK {
   width: 24px;
   height: 14px;
-  background-image: url("../img/VK.svg");
+  background-image: url("../img/vk.svg");
   width: 24px;
   height: 14px;
   background-repeat: no-repeat;
@@ -1242,7 +1242,7 @@ li .advantages-item-text::after {
 .button-TG {
   width: 18px;
   height: 15px;
-  background-image: url("../img/TeleG.svg");
+  background-image: url("../img/teleg.svg");
   width: 18px;
   height: 15px;
 }
@@ -1250,7 +1250,7 @@ li .advantages-item-text::after {
 .button-YT {
   width: 22px;
   height: 17px;
-  background-image: url("../img/YT.svg");
+  background-image: url("../img/yt.svg");
   width: 22px;
   height: 17px;
 }
@@ -1421,21 +1421,21 @@ li .advantages-item-text::after {
 .stars-4 {
   width: 140px;
   height: 37px;
-  background-image: url("../img/stars_4.svg");
+  background-image: url("../img/stars-4.svg");
   background-repeat: no-repeat;
 }
 
 .stars-3 {
   width: 140px;
   height: 37px;
-  background-image: url("../img/stars_3.svg");
+  background-image: url("../img/stars-3.svg");
   background-repeat: no-repeat;
 }
 
 .stars-2 {
   width: 140px;
   height: 37px;
-  background-image: url("../img/stars_2.svg");
+  background-image: url("../img/stars-2.svg");
   background-repeat: no-repeat;
 }
 
@@ -1545,7 +1545,7 @@ li .advantages-item-text::after {
   border: none;
   border-radius: 50%;
   background-color: #F2F2F2;
-  background-image: url("../img/close_active.svg");
+  background-image: url("../img/close-active.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1560,7 +1560,7 @@ li .advantages-item-text::after {
 }
 
 .modal-close-button:active {
-  background-image: url("../img/Modal/close_active.svg");
+  background-image: url("../img/close-active.svg");
 }
 
 .modal-title {
@@ -1777,7 +1777,7 @@ li .advantages-item-text::after {
 }
 
 .modal-close-button:active {
-  background-image: url("../img/close_active.svg");
+  background-image: url("../img/close-active.svg");
 }
 
 .button-plus::after {
