@@ -133,15 +133,6 @@ body {
   padding: 0;
 }
 
-.navigation-link-other:hover,
-.navigation-link-other:focus-visible {
-  opacity: 0.6;
-}
-
-.navigation-link-other:active {
-  opacity: 0.3;
-}
-
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
@@ -212,7 +203,7 @@ body {
 .button-registration:active, .button-hotels-link:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
- }
+}
 
 .search-hotel .button-registration {
   font-size: 20px;
@@ -241,6 +232,15 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+
+.want-button:hover,
+.want-button:focus-visible {
+  background-color: rgba(97, 80, 72, 1);
+}
+
+.want-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hero {
@@ -285,7 +285,7 @@ li.service-item:nth-child(1), li.service-item:nth-child(3) {
 }
 
 .service-item:nth-child(1)::before {
-  content: url('../img/Icons/reasons-icon-house.svg');
+  content: url("../img/Icons/reasons-icon-house.svg");
   width: 75px;
   height: 72px;
   display: block;
@@ -293,7 +293,7 @@ li.service-item:nth-child(1), li.service-item:nth-child(3) {
 }
 
 .service-item:nth-child(2)::before {
-  content: url('../img/Icons/reasons-icon-food.svg');
+  content: url("../img/Icons/reasons-icon-food.svg");
   width: 74px;
   height: 70px;
   display: block;
@@ -301,7 +301,7 @@ li.service-item:nth-child(1), li.service-item:nth-child(3) {
 }
 
 .service-item:nth-child(3)::before {
-  content: url('../img/Icons/reasons-icon-gift.svg');
+  content: url("../img/Icons/reasons-icon-gift.svg");
   width: 64px;
   height: 76px;
   display: block;
@@ -425,8 +425,7 @@ li.service-item:nth-child(1), li.service-item:nth-child(3) {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
 }
 
 .subtitle {
@@ -501,7 +500,7 @@ li.service-item:nth-child(1), li.service-item:nth-child(3) {
 content: none;
 }
 
-.breadcrumbs-item-home  {
+.breadcrumbs-item-home {
   display: flex;
   align-self: center;
   justify-self: center;
@@ -606,8 +605,7 @@ content: none;
 }
 
 .filter-title {
-  margin-bottom: 32px;
-  margin-top: 0;
+  margin: 0 0 32px 0;
 }
 
 .button-add-sel {
@@ -651,6 +649,8 @@ content: none;
   position: absolute;
   height: 4px;
   background-color: #FFFFFF;
+  right: 60px;
+  width: 226px;
 }
 
  .range-toggle {
@@ -754,7 +754,7 @@ content: none;
   background-image: url("../img/Icons/circle.svg");
   background-position: 50%;
   background-repeat: no-repeat;
- }
+}
 
  .filter-infrastructure-type .control-mark {
   border-radius: 50%;
@@ -889,8 +889,7 @@ content: none;
 }
 
 .hotels-title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 0 0 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -1057,7 +1056,7 @@ li .advantages-item-text::after {
   padding: 0;
 }
 
-.search-icon  {
+.search-icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -1124,7 +1123,7 @@ li .advantages-item-text::after {
   flex-wrap: wrap;
 }
 
-.welcome2-container {
+.greetings-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1133,7 +1132,7 @@ li .advantages-item-text::after {
   padding: 64px 0;
 }
 
-.welcome2-container .description {
+.greetings-container .description {
   max-width: 505px;
   margin-bottom: 20px;
 }
@@ -1224,10 +1223,6 @@ li .advantages-item-text::after {
   width: 48px;
 }
 
-.social-icon-item:nth-child(3) {
-  margin-right: 0;
-}
-
 .social-icon-link {
   display: block;
   width: 47px;
@@ -1238,9 +1233,16 @@ li .advantages-item-text::after {
 .button-VK {
   width: 24px;
   height: 14px;
+  background-image: url("../img/VK.svg");
+  width: 24px;
+  height: 14px;
+  background-repeat: no-repeat;
 }
 
 .button-TG {
+  width: 18px;
+  height: 15px;
+  background-image: url("../img/TeleG.svg");
   width: 18px;
   height: 15px;
 }
@@ -1248,50 +1250,46 @@ li .advantages-item-text::after {
 .button-YT {
   width: 22px;
   height: 17px;
+  background-image: url("../img/YT.svg");
+  width: 22px;
+  height: 17px;
 }
 
-.button-VK,
-.button-TG,
-.button-YT {
+.social-icon {
   display: block;
   fill: #82B3D3;
 }
 
-.button-VK:hover,
-.button-TG:hover,
-.button-YT:hover {
+.social-icon:hover {
   fill: #68A2CA;
 }
 
-.button-VK:focus,
-.button-TG:focus,
-.button-YT:focus {
+.social-icon:focus {
   fill: #68A2CA;
 }
 
-.button-VK:active,
-.button-TG:active,
-.button-YT:active {
+.social-icon:active {
   fill: #68A2CA;
   opacity: 30%;
 }
 
-.footer-academy-icon {
+.html-academy-icon {
   display: block;
   width: 115px;
   height: 33px;
   fill: #000000;
+
 }
 
-.footer-academy-icon:hover {
+.html-academy-icon:hover {
   fill: #756157;
 }
 
-.footer-academy-icon:focus {
+.html-academy-icon:focus {
   fill: #756157;
 }
 
-.footer-academy-icon:active {
+.html-academy-icon:active {
   fill: rgba(117, 97, 87, 0.30);
 }
 
@@ -1547,7 +1545,7 @@ li .advantages-item-text::after {
   border: none;
   border-radius: 50%;
   background-color: #F2F2F2;
-  background-image: url("../img/Modal/Close.png");
+  background-image: url("../img/close_active.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1650,7 +1648,6 @@ li .advantages-item-text::after {
   background: #f2f2f2;
   padding: 12px 20px 11px 20px;
   min-height: 48px;
-  transition: all 0.3s;
 }
 
 .modal-icon {
@@ -1702,8 +1699,7 @@ li .advantages-item-text::after {
 
 .clarification {
   display: flex;
-  margin-top: 3px;
-  margin-bottom: 0;
+  margin: 3px 0 0 0;
   color: red;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -1713,10 +1709,9 @@ li .advantages-item-text::after {
   top: 212px;
 }
 
-.clarification-2 {
+.clarifications {
   display: flex;
-  margin-top: 3px;
-  margin-bottom: 0;
+  margin: 3px 0 0 0;
   color: #000000;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -1883,16 +1878,14 @@ li .advantages-item-text::after {
   bottom: 100%;
   right: 46%;
   top: -6%;
-  margin-left: auto;
-  margin-right: 13px;
+  margin: 0 13px 0 auto;
 }
 
 .tooltip {
   position: relative;
   width: 26px;
   height: 26px;
-  margin-top: 0;
-  margin-left: 0;
+  margin: 0 0 0 0;
 }
 
 .tooltip-icon:hover + .tooltip-text,
