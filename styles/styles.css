@@ -103,7 +103,7 @@ body {
 }
 
 .navigation-link:hover {
-  color: #000000;
+  color: #756257;;
 }
 
 .navigation-link:focus {
@@ -252,12 +252,19 @@ body {
 }
 
 .want-button:hover,
-.want-button:focus-visible {
-  background-color: rgba(97, 80, 72, 1);
+.want-button:focus {
+  background: #615048;
 }
 
 .want-button:active {
+  background: #756157;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.want-button:disabled {
+  border-radius: 4px;
+  background: #e5e5e5;
+  color: #ffffff;
 }
 
 .hero {
@@ -443,15 +450,12 @@ li.service-item:nth-child(3) {
   flex-direction: column;
 }
 
-.filter-price {
-  color: #ffffff;
-}
-
 .inner-page-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   margin: 0 0 8px 0;
+  color: #ffffff;
 }
 
 .subtitle {
@@ -634,7 +638,7 @@ content: none;
 }
 
 .filter-title {
-  margin: 0 0 32px 0;
+  margin: 0 0 32px -1px;
 }
 
 .button-add-sel {
@@ -711,9 +715,17 @@ content: none;
   left: -1px;
 }
 
+.toggle-min:hover{
+  outline: 2px solid #68A2CA;
+}
+
 .toggle-max {
   top: -8px;
   right: 0px;
+}
+
+.toggle-max:hover {
+  outline: 2px solid #68A2CA;
 }
 
 .margin-container {
@@ -754,10 +766,11 @@ content: none;
   opacity: 0.6;
 }
 
-.control-input:focus
-.control-mark {
+.control-input:focus,
+.control-mark:focus {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   outline: 3px solid #83B3D3;
+  border: 1px solid #68A2CA;
 }
 
 .control-input:disabled {
@@ -765,10 +778,10 @@ content: none;
   text-decoration: line-through;
 }
 
-.control-input:disabled
-.control-mark{
+.control-input:disabled,
+.control-mark:disabled {
   background-color: #000000;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 
 .control:active {
@@ -935,6 +948,14 @@ content: none;
   min-height: 212px;
   grid-column: 2 span;
   object-fit: cover;
+}
+
+.hotels-photo:hover {
+  opacity: 0.8;
+}
+
+.hotels-photo:hover {
+  opacity: 0.6;
 }
 
 .rating-total {
@@ -1395,15 +1416,22 @@ li .advantages-item-text::after {
 }
 
 .homepage-icon {
-  top: 1px;
+  top: 2px;
   left: 1px;
   fill: rgba(255, 255, 255, 1);
   position: relative;
 }
 
+.breadcrumbs-arrow {
+  display:flex;
+  width: 15px;
+  margin: 0 0 0 1px;
+}
+
 .breadcrumbs-arrow::before {
   content: ">";
   margin-right: 7px;
+  color: #ffffff;
 }
 
 .select-sorting:hover {
@@ -1498,6 +1526,7 @@ li .advantages-item-text::after {
   padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+
 }
 
 .side-text-left {
