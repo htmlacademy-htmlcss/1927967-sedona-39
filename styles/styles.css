@@ -444,7 +444,23 @@ li.service-item:nth-child(3) {
   background-size: cover;
 }
 
-.filter-price
+.filter-price-input-min:hover,
+.filter-price-input-max:hover {
+  background-color: #e6e6e6;
+}
+
+.filter-price-input-min:focus {
+  border-radius: 4px 0 0 4px;
+  background: #e6e6e6;
+}
+
+.filter-price-input-max:focus {
+  border-radius: 0 4px 4px 0;
+  outline: 3px solid #83b3d3;
+  background: #e6e6e6;
+}
+
+.filter-price,
 .container {
   display: flex;
   flex-direction: column;
@@ -593,12 +609,12 @@ content: none;
   text-decoration: none;
 }
 
-.filter-price-slider input.filter-price-input-min {
+.filter-price-input-min {
   border-radius: 4px 0 0 4px;
   background-color: #F2F2F2;
 }
 
-.filter-price-slider input.filter-price-input-max {
+.filter-price-input-max {
   border-radius: 0 4px 4px 0;
   background-color: #F2F2F2;
 }
@@ -752,13 +768,12 @@ content: none;
 
 .control-mark {
   position: absolute;
-  top: 2px;
   left: 0;
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -791,17 +806,29 @@ content: none;
 .control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../img/icons/tick.svg");
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
 }
 
-.control-input[type="radio"]:checked + .control-mark {
+.control-input[type="radio"]:checked + .control-mark-radio {
   background-image: url("../img/Icons/circle.svg");
-  background-position: 50%;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
-.filter-infrastructure-type .control-mark {
-  border-radius: 50%;
+.control-mark-radio {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.filter-infrastructure-type {
+  width: 150px;
+  margin-right: auto;
 }
 
 .button-reset {
@@ -1168,6 +1195,8 @@ li .advantages-item-text::after {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  grid-column: span 2;
+  padding: 0;
 }
 
 .advantages-list {
