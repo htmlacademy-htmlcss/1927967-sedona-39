@@ -11,38 +11,43 @@
   <body>
     <div class="page-wrapper">
       <h1 class="visually-hidden">Сайт курорта Седона</h1>
-      <header class="page-header" data-test="header">
-        <a class="main-logo" href="index.html">
-          <img class="page-logo" src="./img/logo.svg" width="140" height="70" alt="Логотип сайта Седона">
-        </a>
-      <nav class="navigation">
-        <ul class="list navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-active" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="list navigation-list navigation-user">
-          <li class="user-item">
-            <a class="search" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="user-item">
-            <a class="favorites" href="#">
-            <span class="visually-hidden">Избранное</span><b>12</b></a>
-          </li>
-          <li class="user-item">
-            <a class="button want-button" href="#">ХОЧУ СЮДА!</a>
-          </li>
-        </ul>
-      </nav>
+
+      <header data-test="header">
+        <nav class="navigation">
+          <a class="nav-logo" href="index.html">
+            <img class="page-logo" src="img/logo.svg" alt="logo-sedona" width="140" height="70">
+          </a>
+          <ul class="navigation-list">
+            <li class="navigation-item active-nav">
+              <a class="navigation-link" aria-current="page">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link available-link" href="#">О седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link available-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-user">
+            <li class="user-item">
+              <button class="search-button all-button" type="button">
+                <span class="visually-hidden">Поиск</span>
+              </button>
+            </li>
+            <li class="user-item">
+              <button class="favorites-button all-button" type="button">
+                <span class="visually-hidden">Понравившиеся отели</span>
+              </button>
+            </li>
+            <li class="user-item user-item-flex">
+              <button class="want-button all-button" type="button">
+                Хочу сюда!
+              </button>
+            </li>
+          </ul>
+        </nav>
       </header>
+
       <main class="main-container" data-test="main">
         <section class="hero" data-test="hero">
           <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
