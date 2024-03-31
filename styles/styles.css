@@ -1822,6 +1822,7 @@ li .advantages-item-text::after {
 
 .modal-content {
   width: 717px;
+  box-shadow: 0 15px 30px 0px rgba(0, 0, 0, 0.30);
 }
 
 .modal-close-button {
@@ -1831,7 +1832,6 @@ li .advantages-item-text::after {
   background-image: url("../img/close-active.svg");
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
   position: absolute;
   top: 64px;
   right: 51px;
@@ -1950,7 +1950,7 @@ li .advantages-item-text::after {
   background-position: center;
   right: 3px;
   height: 18px;
-  width: 1385px;
+  width: 350px;
   margin-top: 2px;
   padding: 0;
 }
@@ -2186,8 +2186,8 @@ li .advantages-item-text::after {
   border-radius: 10px;
   box-sizing: border-box;
   display: none;
-  margin-top: 10px;
-  left: -92px;
+  margin-top: 44px;
+  left: -43px;
 }
 
 .tooltip-text::before {
