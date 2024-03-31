@@ -134,6 +134,7 @@ body {
   text-decoration: none;
   color: #000000;
   padding: 20px 16px;
+  cursor: pointer;
 }
 
 .navigation-link::after {
@@ -511,15 +512,22 @@ li.service-item:nth-child(3) {
 }
 
 .contact {
-  text-decoration: none;
-  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 720px;
+  margin-right: auto;
+  color: #000000;
+  text-align: center;
   font-size: 40px;
   line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
+  text-decoration: none;
 }
 
+.link-htmlacademy {
+  display: flex;
+  align-items: center;
+}
 .contact:hover {
   color: #756157;
 }
@@ -1413,22 +1421,26 @@ li .advantages-item-text::after {
 }
 
 .page-footer {
-  display: flex;
-  width: 1200px;
+  background: #ffffff;
   min-height: 120px;
   padding: 40px 70px 30px 70px;
-  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  margin: 13px 14px 13px 12px;
+  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .social-list {
-  width: 170px;
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  margin-right: auto;
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 
 .social-icon-item {
@@ -1465,6 +1477,8 @@ li .advantages-item-text::after {
 .social-icon {
   display: block;
   fill: #82B3D3;
+  margin: 13px 14px 13px 12px;
+  justify-content: space-between;
 }
 
 .social-icon:hover {
@@ -1501,14 +1515,16 @@ li .advantages-item-text::after {
 }
 
 .contact {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 720px;
+  margin-right: auto;
+  color: #000000;
+  text-align: center;
   font-size: 40px;
   line-height: 40px;
-  font-style: normal;
   text-decoration: none;
-  word-break: break-all;
-  color: #000000;
 }
 
 .hotels-catalog {
