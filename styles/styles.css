@@ -1808,6 +1808,9 @@ li .advantages-item-text::after {
   line-height: 20px;
 }
 
+.modal-container-close {
+  display: none;
+}
 
 .modal {
   position: relative;
@@ -1942,12 +1945,12 @@ li .advantages-item-text::after {
 .modal-icon {
   position: fixed;
   content: "";
-  background-image: url(../img/calendar.svg);
+  background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
   background-position: center;
   right: 3px;
   height: 18px;
-  width: 350px;
+  width: 1385px;
   margin-top: 2px;
   padding: 0;
 }
