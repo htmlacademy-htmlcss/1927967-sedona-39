@@ -77,6 +77,12 @@ body {
   object-fit: contain;
 }
 
+.home-photo {
+  grid-column: span 2;
+  padding: 0;
+  background-color: #68A2CA;
+}
+
 .filter-infrastructure-list {
   margin: 0;
   padding: 0;
@@ -676,7 +682,7 @@ li.service-item:nth-child(3) {
   width: 12px;
   height: 12px;
   padding: 1px;
-  background-image: url("../img/Icons/home/catalog.svg");
+  background-image: url("../img/Icons/home-catalog.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1009,7 +1015,7 @@ li.service-item:nth-child(3) {
 }
 
 .view-cards {
-  background: url("../img/Icons/Icon_filter/setka.png") no-repeat center;
+  background: url("../img/Icons/Icon_filter/net.png") no-repeat center;
 }
 
 .view-by-one {
@@ -1017,7 +1023,7 @@ li.service-item:nth-child(3) {
 }
 
 .view-list {
-  background: url("../img/Icons/Icon_filter/spisok.png") no-repeat center;
+  background: url("../img/Icons/Icon_filter/list.png") no-repeat center;
 }
 
 .view-button:hover,
@@ -1462,6 +1468,27 @@ li .advantages-item-text::after {
   width: 48px;
 }
 
+social-icon-item-vk {
+  display: block;
+  fill: #82B3D3;
+  margin: 13px 14px 13px 12px;
+  justify-content: space-between;
+}
+
+.social-icon-tg {
+  display: block;
+  fill: #82B3D3;
+  margin: 13px 14px 13px 12px;
+  justify-content: space-between;
+}
+
+.social-icon-yt {
+  display: block;
+  fill: #82B3D3;
+  margin: 13px 14px 13px 12px;
+  justify-content: space-between;
+}
+
 .social-icon-link {
   display: block;
   width: 47px;
@@ -1668,25 +1695,28 @@ li .advantages-item-text::after {
   align-self: center;
 }
 
-.stars-4 {
+.four-stars {
   width: 140px;
   height: 37px;
   background-image: url("../img/stars-4.svg");
   background-repeat: no-repeat;
+  margin: 0;
 }
 
-.stars-3 {
+.three-stars {
   width: 140px;
   height: 37px;
   background-image: url("../img/stars-3.svg");
   background-repeat: no-repeat;
+  margin: 0;
 }
 
-.stars-2 {
+.two-stars {
   width: 140px;
   height: 37px;
   background-image: url("../img/stars-2.svg");
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 .hotels-item {
